@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CreatorAI - Project</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="project-page">
+
+
+    <!-- ==========================================
+         TOP BAR
+    ========================================== -->
+
+    <header class="project-topbar">
+
+        <div class="project-title">
+
+            <a
+                href="index.html"
+                class="back-button">
+
+                ←
+
+            </a>
+
+            <div>
+
+                <p>PROJECT</p>
+
+                <h1 id="projectTitle">
+                    Data Science Explainer
+                </h1>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="save-project"
+            id="saveProjectButton">
+
+            Save Project
+
+        </button>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         WORKSPACE
+    ========================================== -->
+
+    <main class="workspace">
+
+
+        <!-- SCRIPT -->
+
+        <section class="workspace-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="step-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Script
+                        </h2>
+
+                        <p>
+                            Upload or paste your script
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="upload-area">
+
+                <div class="upload-icon">
+                    📄
+                </div>
+
+                <h3>
+                    Upload your script
+                </h3>
+
+                <p>
+                    TXT, PDF, DOCX or paste your script below
+                </p>
+
+
+                <input
+                    type="file"
+                    id="scriptFile"
+                    accept=".txt,.pdf,.doc,.docx">
+
+
+                <label
+                    for="scriptFile"
+                    class="upload-button">
+
+                    Choose Script
+
+                </label>
+
+
+                <p
+                    id="scriptUploadStatus"
+                    class="upload-status">
+                </p>
+
+            </div>
+
+
+            <textarea
+                id="scriptText"
+                placeholder="Or paste your script here..."></textarea>
+
+        </section>
+
+
+
+        <!-- FOOTAGE -->
+
+        <section class="workspace-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="step-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Footage
+                        </h2>
+
+                        <p>
+                            Upload your raw video footage
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="upload-area">
+
+                <div class="upload-icon">
+                    🎥
+                </div>
+
+                <h3>
+                    Upload your footage
+                </h3>
+
+                <p>
+                    MP4, MOV or WebM
+                </p>
+
+
+                <input
+                    type="file"
+                    id="videoFile"
+                    accept="video/mp4,video/quicktime,video/webm">
+
+
+                <label
+                    for="videoFile"
+                    class="upload-button">
+
+                    Choose Video
+
+                </label>
+
+
+                <p
+                    id="videoUploadStatus"
+                    class="upload-status">
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- AI MATCHING -->
+
+        <section class="ai-section">
+
+            <div class="ai-header">
+
+                <div>
+
+                    <span class="ai-badge">
+                        ✨ AI
+                    </span>
+
+                    <h2>
+                        Script ↔ Footage Matching
+                    </h2>
+
+                    <p>
+                        CreatorAI will find the moments in your
+                        footage that best match your script.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="analyze-button"
+                    id="analyzeButton">
+
+                    Analyze Footage →
+
+                </button>
+
+            </div>
+
+
+            <div id="matchResults">
+
+                <div class="match-card">
+
+                    <div class="match-content">
+
+                        <span class="match-label">
+                            READY FOR ANALYSIS
+                        </span>
+
+                        <h3>
+                            Upload your script and footage
+                        </h3>
+
+                    </div>
+
+
+                    <div class="match-result">
+
+                        <div class="timestamp">
+                            --
+                        </div>
+
+                        <div class="match-score">
+                            -- Match
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SMART CLIPS -->
+
+        <section class="clips-section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <span class="ai-badge">
+                        ✨ AI
+                    </span>
+
+                    <h2>
+                        Smart Clip Suggestions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="clips-grid"
+                id="clipsGrid">
+
+
+                <div class="clip-card">
+
+                    <div class="clip-preview">
+                        ▶
+                    </div>
+
+                    <div class="clip-info">
+
+                        <h3>
+                            Clip 01
+                        </h3>
+
+                        <p>
+                            Waiting for analysis
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="clip-card">
+
+                    <div class="clip-preview">
+                        ▶
+                    </div>
+
+                    <div class="clip-info">
+
+                        <h3>
+                            Clip 02
+                        </h3>
+
+                        <p>
+                            Waiting for analysis
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="clip-card">
+
+                    <div class="clip-preview">
+                        ▶
+                    </div>
+
+                    <div class="clip-info">
+
+                        <h3>
+                            Clip 03
+                        </h3>
+
+                        <p>
+                            Waiting for analysis
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

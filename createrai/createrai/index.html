@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CreatorAI - Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ==========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <span>
+                CreatorAI
+            </span>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a
+                href="index.html"
+                class="nav-item active">
+
+                <span>⌂</span>
+                Home
+
+            </a>
+
+
+            <a
+                href="#projects"
+                class="nav-item">
+
+                <span>▣</span>
+                Projects
+
+            </a>
+
+
+            <a
+                href="project.html"
+                class="nav-item">
+
+                <span>✦</span>
+                Studio
+
+            </a>
+
+
+            <a
+                href="#calendar"
+                class="nav-item">
+
+                <span>□</span>
+                Calendar
+
+            </a>
+
+
+            <a
+                href="#socials"
+                class="nav-item">
+
+                <span>◎</span>
+                Connect Socials
+
+            </a>
+
+
+            <a
+                href="#insights"
+                class="nav-item">
+
+                <span>◫</span>
+                Insights
+
+            </a>
+
+
+            <a
+                href="#settings"
+                class="nav-item">
+
+                <span>⚙</span>
+                Settings
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="creator-mini">
+
+                <div class="avatar">
+                    DY
+                </div>
+
+                <div>
+
+                    <strong>
+                        Creator
+                    </strong>
+
+                    <span>
+                        Workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ==========================================
+         MAIN
+    ========================================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    CREATOR WORKSPACE
+                </p>
+
+                <h1>
+                    Good morning 👋
+                </h1>
+
+            </div>
+
+
+            <button
+                class="new-project-button"
+                id="newProjectBtn">
+
+                + New Project
+
+            </button>
+
+        </header>
+
+
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <span>
+                    Projects
+                </span>
+
+                <strong>
+                    12
+                </strong>
+
+                <small>
+                    +3 this month
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Clips Created
+                </span>
+
+                <strong>
+                    48
+                </strong>
+
+                <small>
+                    +12 this week
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Published
+                </span>
+
+                <strong>
+                    27
+                </strong>
+
+                <small>
+                    Across platforms
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    AI Time Saved
+                </span>
+
+                <strong>
+                    18h
+                </strong>
+
+                <small>
+                    This month
+                </small>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        WORKFLOW
+                    </p>
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+
+                <a
+                    href="project.html"
+                    class="quick-card">
+
+                    <div class="quick-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Script → Clips
+                    </h3>
+
+                    <p>
+                        Match your script with raw footage.
+                    </p>
+
+                </a>
+
+
+                <a
+                    href="project.html"
+                    class="quick-card">
+
+                    <div class="quick-icon">
+                        ✎
+                    </div>
+
+                    <h3>
+                        Generate Script
+                    </h3>
+
+                    <p>
+                        Turn an idea into a creator-ready script.
+                    </p>
+
+                </a>
+
+
+                <a
+                    href="#calendar"
+                    class="quick-card">
+
+                    <div class="quick-icon">
+                        □
+                    </div>
+
+                    <h3>
+                        Content Calendar
+                    </h3>
+
+                    <p>
+                        Plan and organize your publishing schedule.
+                    </p>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECENT PROJECTS -->
+
+        <section
+            class="dashboard-section"
+            id="projects">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        WORKSPACE
+                    </p>
+
+                    <h2>
+                        Recent Projects
+                    </h2>
+
+                </div>
+
+                <a
+                    href="project.html"
+                    class="text-link">
+
+                    View all →
+
+                </a>
+
+            </div>
+
+
+            <div class="project-list">
+
+
+                <div class="project-card">
+
+                    <div class="project-card-icon">
+                        DS
+                    </div>
+
+                    <div class="project-card-main">
+
+                        <h3>
+                            Data Science Explainer
+                        </h3>
+
+                        <p>
+                            Script → Footage → Smart Clips
+                        </p>
+
+                    </div>
+
+                    <div class="project-card-status">
+                        In progress
+                    </div>
+
+                    <a
+                        href="project.html"
+                        class="open-project">
+
+                        Open Project →
+
+                    </a>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-card-icon">
+                        AI
+                    </div>
+
+                    <div class="project-card-main">
+
+                        <h3>
+                            AI for Beginners
+                        </h3>
+
+                        <p>
+                            Educational short-form content
+                        </p>
+
+                    </div>
+
+                    <div class="project-card-status">
+                        Ready
+                    </div>
+
+                    <a
+                        href="project.html"
+                        class="open-project">
+
+                        Open Project →
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INSIGHTS -->
+
+        <section
+            class="dashboard-section"
+            id="insights">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        PERFORMANCE
+                    </p>
+
+                    <h2>
+                        Creator Insights
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="insight-panel">
+
+                <div>
+
+                    <span>
+                        Best performing format
+                    </span>
+
+                    <strong>
+                        Educational Shorts
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Average engagement
+                    </span>
+
+                    <strong>
+                        7.8%
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Top platform
+                    </span>
+
+                    <strong>
+                        Instagram
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- ==========================================
+     NEW PROJECT MODAL
+========================================== -->
+
+<div
+    class="modal"
+    id="projectModal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="closeModal">
+
+            ×
+
+        </button>
+
+
+        <p class="eyebrow">
+            NEW PROJECT
+        </p>
+
+        <h2>
+            Create a new project
+        </h2>
+
+        <p class="modal-description">
+            Start a new CreatorAI content workflow.
+        </p>
+
+
+        <label>
+            Project Name
+        </label>
+
+        <input
+            type="text"
+            id="projectName"
+            placeholder="e.g. Data Science Explainer">
+
+
+        <label>
+            Content Type
+        </label>
+
+        <select id="contentType">
+
+            <option>
+                Short Video
+            </option>
+
+            <option>
+                YouTube Video
+            </option>
+
+            <option>
+                Instagram Reel
+            </option>
+
+            <option>
+                LinkedIn Video
+            </option>
+
+            <option>
+                Educational Content
+            </option>
+
+        </select>
+
+
+        <button
+            class="create-project-button"
+            id="createProjectBtn">
+
+            Create Project
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
